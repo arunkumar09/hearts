@@ -1,6 +1,7 @@
 import { Col, Row, Container, Card, CardBody, CardHeader } from 'reactstrap'; 
 
 import SubHeader from "../components/SubHeader";
+import PartnersList from '../features/partners/PartnersList';
 
 const AboutPage = () => {
     return (
@@ -41,7 +42,8 @@ const AboutPage = () => {
                 </Col>
                 <Col>
                     <Card className='bg-light mt-3'>
-                        <CardBody className='blockquote'>
+                        <CardBody>
+                            <blockquote className='blockquote'>
                             <p>
                                 I will not follow where the path may lead, but I
                                 will go where there is no path, and I will leave
@@ -53,7 +55,8 @@ const AboutPage = () => {
                                         "Wind-Wafted Wild Flowers" - The Open Court,
                                         1903
                                     </cite>
-                            </footer>
+                                </footer>
+                            </blockquote>
                         </CardBody>
                     </Card>
                 </Col>
@@ -62,6 +65,7 @@ const AboutPage = () => {
                 <Col xs='12'>
                     <h3>Community Partners</h3>
                 </Col>
+                <PartnersList/>
             </Row>
         </Container>
       );
